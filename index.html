@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./NuevaPaginaWeb">
+    <title>Laura Calderón</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            margin: 0;
+            padding: 0;
+            font-size: 25px;
+        }
+        .Blog {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed; /* Cambia a posición fija */
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000; /* Asegura que la barra esté por encima de otros elementos */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .Blog a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .contenido {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 80%;
+            text-align: center;
+            margin-top: 60px; /* Añade un margen superior para evitar que el contenido quede oculto detrás de la barra */
+        }
+        .contenido img {
+            max-width: 100%;
+            height: auto;
+        }
+        .contenido .text {
+            max-width: 600px;
+            margin-left: 20px;
+        }
+        .contenido .text h1 {
+            color: #ff6600;
+        }
+        .contenido .text p {
+            color: #666;
+        }
+        .contenido .text button {
+            background-color: #ff6600;
+            color: white;
+            border: 1px solid black;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 1em;
+        }
+        .contenido-adicional {
+            text-align: center;
+            padding: 20px; /* Añade espacio alrededor de la sección */
+            background-color: rgb(255, 83, 10); /* Estilo para el fondo naranja */ 
+        }
+        .contenido-adicional h2 {
+            color: white;
+            position: relative;
+            margin-bottom: 20px; /* Añade espacio debajo del nombre */
+        }
+        .contenido-adicional p {
+            color: white;
+        }
+        .contenido-adicional img {
+            max-width: 200px; /* Ajusta el tamaño máximo de la imagen */
+            height: auto;
+            display: block;
+            margin: 0 auto 20px; /* Centra la imagen y agrega un margen inferior */
+            border-radius: 100%;
+        }
+        .proyectos {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 20px;
+            text-align: center;
+            background-color: white; /* Fondo blanco para los proyectos */
+            margin: 0 110px; /* Añade margen a los lados */
+        }
+        .card {
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            width: 22%;
+            text-align: center;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .card img {
+            width: 100%;
+            height: auto;
+        }
+        .card h3 {
+            margin: 15px 0;
+            font-size: 1.2em;
+        }
+        .card p {
+            padding: 0 15px;
+            font-size: 0.9em;
+            color: #666;
+            flex-grow: 1;
+        }
+        .card button {
+            background-color: #ff6600;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 15px 0;
+            cursor: pointer;
+            border-radius: 3px;
+            font-size: 0.9em;
+            align-self: center;
+        }
+        .card button:hover {
+            background-color: #e65c00;
+        }
+        .footer {
+            background-color: #333;
+            color: white;
+            text-align: right;
+            padding: 10px 0;
+            bottom: 0;
+            width: 100%;
+            margin-top: 40px; /* Añade un margen superior para separar del contenido anterior */
+        }
+        .titulo-proyectos {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 2em;
+            color: black; /* Color negro para el título */
+        }
+    </style>
+</head>
+<body>
+    <div class="Blog">
+        <div>Laura Calderón</div>
+        <div>
+            <a href="#">Inicio</a>
+            <a href="#">¿Quién soy?</a>
+            <a href="#">Proyectos</a>
+        </div>
+    </div>
+    <div class="contenido">
+        <img src="https://image.freepik.com/vector-gratis/educacion-linea-trabajar-pulir-quedarse-casa-chica-sentada-junto-computadora-portatil-lampara-estudiando-o-trabajando-trabajo-independiente_207606-171.jpg" alt="Illustration of person at desk">
+        <div class="text">
+            <h1>¿Quién soy?</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Esse nisi adipisci provident eius enim id eos fugit odit facere vitae. Sit sequi praesentium, officiis rerum dicta. Deserunt ipsam officia neque!</p>
+            <button>Leer más</button>
+        </div>
+    </div>
+    <div class="contenido-adicional">
+        <img src="https://static.vecteezy.com/system/resources/previews/001/921/774/original/beautiful-woman-red-hair-in-frame-circular-avatar-character-free-vector.jpg" alt="Illustration woman">
+        <div class="text">
+            <h2>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis odio amet nulla ad nobis minima doloribus inventore, aspernatur distinctio dicta ipsam fugit suscipit ullam architecto eos molestias placeat rerum facere.</h2>
+            <p><i>- Laura Calderón</i></p>
+        </div>
+    </div>
+    <div class="titulo-proyectos">Lenguajes de Programación</div>
+    <div class="proyectos">
+        <div class="card">
+            <img src="https://wallpapercave.com/wp/wp8816357.jpg" alt="Proyecto 1">
+            <h3>Python</h3>
+            <p>Es un lenguaje de programación de alto nivel, interpretado y orientado a objetos. Es ampliamente utilizado en el desarrollo de aplicaciones web, análisis de datos y aprendizaje automático.
+            </p>
+            <button>Ver proyecto</button>
+        </div>
+        <div class="card">
+            <img src="https://wallpapercave.com/wp/wp7250277.jpg" alt="Proyecto 2">
+            <h3>Java</h3>
+            <p>Es un lenguaje de programación de alto nivel, orientado a objetos y compilado. Es ampliamente utilizado en el desarrollo de aplicaciones empresariales, Android y juegos.
+            </p>
+            <button>Ver proyecto</button>
+        </div>
+        <div class="card">
+            <img src="https://emaillistvalidation.com/blog/content/images/2023/09/JavaScript-Symbol.png" alt="Proyecto 3">
+            <h3>JavaScript</h3>
+            <p>Es un lenguaje de programación de alto nivel, interpretado y orientado a objetos. Es ampliamente utilizado en el desarrollo de aplicaciones web, móviles y de escritorio.
+            </p>
+            <button>Ver proyecto</button>
+        </div>
+        <div class="card">
+            <img src="https://i0.wp.com/imgs.hipertextual.com/wp-content/uploads/2019/05/hipertextual-cursos-online-gratis-aprender-programar-c-2019879376.jpg?fit=1500%2C1000&quality=50&strip=all&ssl=1" alt="Proyecto 4">
+            <h3>C++</h3>
+            <p>Es un lenguaje de programación de bajo nivel, compilado y orientado a objetos. Es ampliamente utilizado en el desarrollo de sistemas operativos, juegos y aplicaciones de alto rendimiento.</p>
+            <button>Ver proyecto</button>
+        </div>
+    </div>
+    <div class="footer">
+        &copy; 2024 Laura Calderón. Todos los derechos reservados.
+    </div>
+</body>
+</html>
